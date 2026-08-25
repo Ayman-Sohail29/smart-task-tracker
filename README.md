@@ -1,57 +1,64 @@
-# Web Dev Practice
+# 🚀 Web Development Journey
 
-This is my journey learning web development.
+Documenting my progress, daily learning logs, and projects as I build my skills in front-end web development.
 
-## Day 1 (HTML)
-- Learned headings, paragraphs
-- Learned how to make a list (ul/li)
-- Added a link and an image
-- Set up Git and GitHub
+## 🎯 Goal
+To master modern web development, build real-world applications, and offer high-value technical services.
 
-- ## Day 2 (CSS)
-- Learned CSS syntax and how to connect it to HTML
-- Styled colors, font-size, text-align
-- Learned padding and margin (spacing)
-- Learned Flexbox for side-by-side layouts
+---
 
-## Day 3 (Intro Page)
-- Combined HTML and CSS to build a real intro/portfolio page
-- Made the site live using GitHub Pages
+## 📚 Daily Learning Log
 
-## Day 4 (JavaScript)
-- Learned variables and how to store data
-- Learned events (click listeners)
-- Took user input with prompt()
-- Built a mini to-do app: add tasks and delete tasks dynamically
+### Day 1: HTML Basics
+* Learned headings, paragraphs, lists (`ul`/`li`), links, and images.
+* Configured local Git repository and connected to GitHub.
 
-  
-## Day 5 (Arrays + CSS Targeting)
-- Learned CSS id vs class selectors, and nested selectors
-- Learned arrays: storing multiple values with push()
-- Used array.length to build a live task counter
-- Debugged a leftover test-data bug in the array
+### Day 2: CSS Fundamentals
+* Learned CSS syntax and linking external stylesheets.
+* Styled typography, colors, and layout alignments.
+* Mastered the Box Model (`padding`, `margin`, `border`).
+* Practiced basic Flexbox for side-by-side components.
 
-  
-## Day 6 (Conditions)
-- Learned if, else if, else statements
-- Learned the difference between = (assign) and === (compare)
-- Added input validation (empty task, too-short task)
+### Day 3: Personal Portfolio Page
+* Combined HTML and CSS to design a personal intro site.
+* Published the website live using **GitHub Pages**.
 
+### Day 4: JavaScript Basics & DOM
+* Stored data using JS variables (`let`, `const`).
+* Captured user interactions with Event Listeners (`click`).
+* Built a mini To-Do application to dynamically add/remove elements.
 
-## Day 7 (Functions)
-- Learned how to write and call functions
-- Learned parameters (passing data into a function)
-- Refactored repeated code into a reusable function
+### Day 5: Arrays & Specific Selectors
+* Learned Class vs. ID specificity and nested CSS targeting.
+* Stored list items using arrays and array methods like `.push()`.
+* Built a live task counter using `array.length`.
 
-  
-## Day 8 (Loops)
-- Learned for loops: syntax and how they repeat code
-- Used loops to print array items
-- Learned why variable/array order matters in JS files
-  
-## Quote Generator Project
-- Built a random quote generator using arrays and DOM manipulation
-- Practiced debugging: naming mismatches, element selection errors
-  
-## Goal
-To become a web developer and earn from my skills.
+### Day 6: Conditional Logic & Validation
+* Applied logic using `if`, `else if`, and `else` statements.
+* Used strict equality (`===`) for precise comparisons.
+* Added input validation to prevent empty tasks.
+
+### Day 7: Functions & Code Refactoring
+* Structured code using reusable JavaScript functions with parameters.
+* Cleaned up repeated script blocks.
+
+### Day 8: Loops & Dynamic User Inputs
+* Iterated through dataset arrays using `for` loops.
+* Captured live text inputs using `.value`.
+* Updated card layouts on click using `.textContent`.
+
+---
+
+## 🛠️ Projects Built
+
+### 🌤️ Dynamic Weather Card App
+* **Description:** An interactive card that takes custom city names and temperatures from input boxes and updates the display live.
+* **Tech Stack:** HTML5, CSS3, JavaScript (ES6).
+
+### 💬 Random Quote Generator
+* **Description:** An application that cycles through quote arrays and displays random quotes on screen.
+* **Tech Stack:** HTML5, CSS3, JavaScript.
+
+### 📝 Dynamic Task Tracker
+* **Description:** A mini task manager with live item counting, input validation, and dynamic element removal.
+* **Tech Stack:** HTML5, CSS3, JavaScript.
