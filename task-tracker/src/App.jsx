@@ -1,12 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
+  const [quote, setQuote] = useState("");
+const [author, setAuthor] = useState("");
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("tasks");
     return savedTasks ? JSON.parse(savedTasks) : [];
   });
+async function getQuote() {
+  const response = await fetch("https://dummyjson.com/quotes/random");
+  const data = await response.json();
+
+  setQuote(data.quote);
+setAuthor(data.author);
+}
+useEffect(() => {
+  getQuote();
+}, []);
 
   function saveTasks(updatedTasks) {
     setTasks(updatedTasks);
@@ -44,10 +56,16 @@ function App() {
     saveTasks(updatedTasks);
   }
 
-  return (
+  return ( 
+    
     <div className="app">
       <h1>AYMAN'S TASK TRACKER</h1>
-
+      
+<div>
+  <p>{quote}</p>
+  <p>— {author}</p>
+</div>
+<button onClick={getQuote}>New Quote</button>
       <input
         type="text"
         placeholder="Type a new task..."
@@ -59,6 +77,7 @@ function App() {
           }
         }}
       />
+      
 
       <button onClick={addTask}>Add Task</button>
 
