@@ -82,23 +82,29 @@ useEffect(() => {
       <button onClick={addTask}>Add Task</button>
 
       <div className="task-list">
-        {tasks.map(task => (
-          <div className="task" key={task.id}>
-            <span
-              className={task.completed ? "completed" : ""}
-              onClick={() => completeTask(task.id)}
-            >
-              {task.text}
-            </span>
 
-            <button onClick={() => deleteTask(task.id)}>
-              Delete
-            </button>
-          </div>
-        ))}
+        
+         {tasks.map(task => ( 
+    <Task
+    text={task.text}
+    completed={task.completed}
+    onComplete={completeTask}
+    id={task.id}
+    key={task.id}
+  />
+  ))}
+
       </div>
     </div>
   );
+}
+ function Task(props) {
+  return (
+  <p completed={props.completed ? "completed" : ""} > 
+  {props.text}
+  
+  </p>)
+  ;
 }
 
 export default App;
